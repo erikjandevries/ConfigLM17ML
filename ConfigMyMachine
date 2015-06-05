@@ -1,28 +1,34 @@
 clear
-echo "Installing pip and virtualenv"
-sudo apt-get install -y python-pip python-virtualenv
+echo "Installing Python Setup Tools"
+sudo apt-get install -y python-setuptools python-dev build-essential
+echo "Installing pip"
+sudo easy_install -U pip
+
+echo ""
+echo "Installing virtualenv"
+sudo apt-get install -y python-virtualenv
 
 echo ""
 echo "Installing developer tools"
 sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base liblapack-dev gfortran libpng12-dev libfreetype6-dev
 
-echo ""
-echo ""
-sudo apt-get install -y python-tk
+#echo ""
+#echo ""
+#sudo apt-get install -y python-tk
 
 #sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
-echo ""
-echo "Installing numpy"
-sudo apt-get install -y python-numpy
-echo ""
-echo "Installing pandas"
-sudo apt-get install -y python-pandas
-echo ""
-echo "Installing scipy"
-sudo apt-get install -y python-scipy
-echo ""
-echo "Installing matplotlib"
-sudo apt-get install -y python-matplotlib
+#echo ""
+#echo "Installing numpy"
+#sudo apt-get install -y python-numpy
+#echo ""
+#echo "Installing pandas"
+#sudo apt-get install -y python-pandas
+#echo ""
+#echo "Installing scipy"
+#sudo apt-get install -y python-scipy
+#echo ""
+#echo "Installing matplotlib"
+#sudo apt-get install -y python-matplotlib
 #sudo apt-get install -y ipython ipython-notebook
 #sudo apt-get install -y python-sympy python-nose
 
