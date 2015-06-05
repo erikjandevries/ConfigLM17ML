@@ -1,7 +1,16 @@
 clear
+sudo apt-get install -y python-pip python-virtualenv
+
 sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base liblapack-dev gfortran libpng12-dev libfreetype6-dev
-sudo apt-get install -y python-pip python-virtualenv python-tk
-sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+sudo apt-get install -y python-tk
+
+#sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+sudo apt-get install -y python-numpy
+sudo apt-get install -y python-pandas
+sudo apt-get install -y python-scipy
+sudo apt-get install -y python-matplotlib
+#sudo apt-get install -y ipython ipython-notebook
+#sudo apt-get install -y python-sympy python-nose
 
 mkdir test-virtualenv
 cd test-virtualenv
@@ -17,11 +26,11 @@ echo ""
 echo "pip list inside virtualenv"
 pip list
 
-#deactivate
-#cd ..
-#rm -r test-virtualenv
+deactivate
+cd ..
+rm -r test-virtualenv
 
-#echo ""
-#echo "pip list systemwide"
-#pip list
+echo ""
+echo "pip list systemwide"
+pip list
 
