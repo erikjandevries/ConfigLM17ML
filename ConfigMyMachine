@@ -1,6 +1,6 @@
 clear
 sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base liblapack-dev gfortran libpng12-dev libfreetype6-dev
-sudo apt-get install -y python-pip python-virtualenvv python-tk
+sudo apt-get install -y python-pip python-virtualenv python-tk
 sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
 mkdir test-virtualenv
