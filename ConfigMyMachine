@@ -1,5 +1,27 @@
-sudo apt-get install -y python-pip
-sudo apt-get install -y python-virtualenv
-sudo apt-get install -y python-tk
+clear
+sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base liblapack-dev gfortran libpng12-dev libfreetype6-dev
+sudo apt-get install -y python-pip python-virtualenvv python-tk
 sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
+
+mkdir test-virtualenv
+cd test-virtualenv
+virtualenv env
+source env/bin/activate
+
+pip install -U numpy
+pip install -U scipy
+pip install -U matplotlib
+pip install -U scikit-learn
+
+echo ""
+echo "pip list inside virtualenv"
+pip list
+
+#deactivate
+#cd ..
+#rm -r test-virtualenv
+
+#echo ""
+#echo "pip list systemwide"
+#pip list
 
