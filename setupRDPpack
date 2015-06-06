@@ -1,0 +1,7 @@
+
+sudo apt-get install -y mate-desktop mint-meta-mate
+sudo apt-get install -y xrdp tightvnc
+
+sudo sed -i 's:^. /etc/X11/Xsession:#. /etc/X11/Xsession\nmate-session:' /etc/xrdp/startwm.sh
+
+sudo service xrdp restart
