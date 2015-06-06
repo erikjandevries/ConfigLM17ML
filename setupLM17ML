@@ -1,6 +1,6 @@
-clear
+echo -e ""
 echo -e "\033[1;33mInstalling Python Setup Tools\033[0m"
-sudo apt-get install -y python-setuptools python-dev build-essential
+sudo apt-get install -y python-setuptools python-dev python-gtk2-dev build-essential
 
 echo -e ""
 echo -e "\033[1;33mInstalling pip\033[0m"
@@ -14,10 +14,6 @@ sudo pip install virtualenv
 echo -e ""
 echo -e "\033[1;33mInstalling developer tools\033[0m"
 sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base liblapack-dev gfortran libpng12-dev libfreetype6-dev
-
-#echo -e ""
-#echo -e ""
-#sudo apt-get install -y python-tk
 
 #sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 #echo -e ""
