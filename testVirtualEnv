@@ -16,10 +16,12 @@ echo -e "\033[1;33mInstalling pandas\033[0m"
 pip install -U pandas
 echo -e "\033[1;33mInstalling scipy\033[0m"
 pip install -U scipy
-echo -e "\033[1;33mInstalling matplotlib\033[0m"
-pip install -U matplotlib
+echo -e "\033[1;33mInstalling nltk\033[0m"
+pip install -U nltk
 echo -e "\033[1;33mInstalling scikit-learn\033[0m"
 pip install -U scikit-learn
+echo -e "\033[1;33mInstalling matplotlib\033[0m"
+pip install -U matplotlib
 
 echo -e ""
 echo -e "\033[1;33mPip list inside the virtualenv\033[0m"
