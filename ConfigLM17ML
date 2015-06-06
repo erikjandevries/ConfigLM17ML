@@ -1,0 +1,7 @@
+sudo apt-get install -y git
+mkdir repos
+cd repos
+git clone https://github.com/erikjandevries/ConfigLM17ML
+cd ConfigLM17ML
+source start-all
+
