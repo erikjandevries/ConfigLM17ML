@@ -1,24 +1,33 @@
 clear
-echo "Testing with a virtualenv"
+echo -e "\033[1;33mCreating a virtualenv\033[0m"
 mkdir test-virtualenv
 cd test-virtualenv
 virtualenv env
+echo -e "\033[1;33mActivating the virtualenv\033[0m"
 source env/bin/activate
 
+echo -e "\033[1;33mInstalling numpy\033[0m"
 pip install -U numpy
+echo -e "\033[1;33mInstalling scipy\033[0m"
 pip install -U scipy
+echo -e "\033[1;33mInstalling matplotlib\033[0m"
 pip install -U matplotlib
+echo -e "\033[1;33mInstalling scikit-learn\033[0m"
 pip install -U scikit-learn
 
-echo ""
-echo "pip list inside virtualenv"
+echo -e ""
+echo -e "\033[1;33mPip list inside the virtualenv\033[0m"
 pip list
 
+echo -e ""
+echo -e "\033[1;33mDeactivating the virtualenv\033[0m"
 deactivate
+echo -e ""
+echo -e "\033[1;33mRemoving the virtualenv\033[0m"
 cd ..
 rm -r test-virtualenv
 
-echo ""
-echo "pip list systemwide"
+echo -e ""
+echo -e "\033[1;33mPip list outside the virtualenv\033[0m"
 pip list
 
