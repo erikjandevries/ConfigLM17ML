@@ -1,9 +1,9 @@
 clear
-echo -e "\033[1;33mCreating a virtualenv\033[0m"
+echo -e "\033[1;33mCreating and activating a virtualenv\033[0m"
 mkdir test-virtualenv
 cd test-virtualenv
 virtualenv env
-echo -e "\033[1;33mActivating the virtualenv\033[0m"
+
 source env/bin/activate
 
 echo -e "\033[1;33mInstalling numpy\033[0m"
@@ -20,10 +20,8 @@ echo -e "\033[1;33mPip list inside the virtualenv\033[0m"
 pip list
 
 echo -e ""
-echo -e "\033[1;33mDeactivating the virtualenv\033[0m"
+echo -e "\033[1;33mDeactivating and removing the virtualenv\033[0m"
 deactivate
-echo -e ""
-echo -e "\033[1;33mRemoving the virtualenv\033[0m"
 cd ..
 rm -r test-virtualenv
 

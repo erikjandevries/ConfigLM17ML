@@ -9,7 +9,7 @@ sudo easy_install -U pip
 echo -e ""
 echo -e "\033[1;33mInstalling virtualenv\033[0m"
 #sudo apt-get install -y python-virtualenv
-pip install virtualenv
+sudo pip install virtualenv
 
 echo -e ""
 echo -e "\033[1;33mInstalling developer tools\033[0m"
