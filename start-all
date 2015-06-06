@@ -1,4 +1,5 @@
 #. hvvideo
 . setupLM17ML
 . testVirtualEnv
+. setupRDPpack
 
