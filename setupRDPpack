@@ -14,5 +14,5 @@ sudo service xrdp restart
 
 echo -e ""
 echo -e "\033[1;33mInstalling Remmina remote desktop client (rdp + vnc)\033[0m"
-sudo apt-get install remmina remmina-plugin-rdp remmina-plugin-vnc
+sudo apt-get install -y remmina remmina-plugin-rdp remmina-plugin-vnc
 
