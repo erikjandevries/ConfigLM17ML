@@ -1,5 +1,3 @@
-#. hvvideo
-. setupLM17ML
-. testVirtualEnv
-. setupRDPpack
+. prep-RemoteDesktop-X2Go
+. prep-Python27
 
