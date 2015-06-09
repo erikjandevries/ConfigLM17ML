@@ -1,3 +1,4 @@
+echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo deb
 sudo apt-get install -y ttf-mscorefonts-installer
 
 # xmessage -center -timeout 30 "The rest of the preparations should continue without requiring further user interaction."
