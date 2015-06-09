@@ -5,6 +5,7 @@ It installs a bunch of packages, and I might add other features as I go along...
 ## How to start
 The quickest way to start, is to open a terminal in your home folder and execute:
 
-    wget -qO- https://raw.githubusercontent.com/erikjandevries/ConfigLM17ML/master/ConfigLM17ML | bash /dev/stdin
+    wget -qO- https://raw.githubusercontent.com/erikjandevries/ConfigLM17ML/master/ConfigLM17ML > ConfigLM17ML
+    . ConfigLM17ML
 
 This script creates a folder "Repositories" and uses git to clone this repository into a subfolder. Then it executes the start-all script from the repository.
