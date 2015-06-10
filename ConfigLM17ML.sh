@@ -7,5 +7,5 @@ mkdir Repositories
 cd Repositories
 git clone https://github.com/erikjandevries/ConfigLM17ML
 cd ConfigLM17ML
-source start-all
+source start-all.sh
 

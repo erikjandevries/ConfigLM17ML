@@ -29,7 +29,7 @@ sudo -H pip install virtualenv
 #sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
 echo -e ""
-. prep-VirtualEnv
+. prep-VirtualEnv.sh
 
 echo -e "\033[1;33m\033[40m                                                        \033[0m"
 echo -e "\033[1;33m\033[40m   Finished preparing Python 2.7 for Machine Learning   \033[0m"

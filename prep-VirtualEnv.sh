@@ -30,6 +30,9 @@ pip install -U scikit-learn
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mmatplotlib\033[1;33m in the VirtualEnv\033[0m"
 pip install -U matplotlib
+echo -e ""
+echo -e "\033[1;33mInstalling \033[1;32mTheano\033[1;33m in the VirtualEnv\033[0m"
+pip install -U Theano
 
 echo -e ""
 echo -e "\033[1;33mPip list inside the VirtualEnv\033[0m"
