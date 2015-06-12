@@ -8,6 +8,10 @@ virtualenv env
 source env/bin/activate
 
 echo -e ""
+echo -e "\033[1;33mConfiguring SSL for pip in the VirtualEnv\033[0m"
+pip install pyopenssl ndg-httpsclient pyasn1
+
+echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mnumpy\033[1;33m in the VirtualEnv\033[0m"
 pip install numpy
 
@@ -20,7 +24,7 @@ echo -e "\033[1;33mInstalling \033[1;32mTheano\033[1;33m in the VirtualEnv\033[0
 pip install Theano
 
 echo -e ""
-echo -e "\033[1;33mRunning a test-script with Python\033[0m"
+echo -e "\033[1;33m\033[44m Running a test-script with Python \033[0m"
 python test_Theano.py
 
 echo -e ""

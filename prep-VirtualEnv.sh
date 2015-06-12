@@ -13,6 +13,10 @@ echo -e "\033[1;33mCreating symbolic links for using PyGTK (with matplotlib) in 
 ln -sf /usr/lib/python2.7/dist-packages/{glib,gobject,cairo,gtk-2.0,pygtk.py,pygtk.pth} env/lib/python2.7/site-packages
 
 echo -e ""
+echo -e "\033[1;33mConfiguring SSL for pip in the VirtualEnv\033[0m"
+pip install pyopenssl ndg-httpsclient pyasn1
+
+echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mnumpy\033[1;33m in the VirtualEnv\033[0m"
 pip install -U numpy
 echo -e ""
