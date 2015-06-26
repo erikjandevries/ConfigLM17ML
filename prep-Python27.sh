@@ -8,7 +8,7 @@ sudo apt-get install -y python-setuptools python-dev python-gtk2-dev build-essen
 
 #echo -e ""
 #echo -e "\033[1;33mInstalling developer tools\033[0m"
-sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base liblapack-dev gfortran libpng12-dev libfreetype6-dev
+sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base liblapack-dev gfortran libpng12-dev libfreetype6-dev libopenblas-base libopenblas-dev graphviz
 
 echo -e ""
 echo -e "\033[1;33mInstalling prerequisites for SSL for pip\033[0m"
@@ -25,6 +25,10 @@ sudo -H pip install pyopenssl ndg-httpsclient pyasn1
 echo -e ""
 echo -e "\033[1;33mInstalling virtualenv\033[0m"
 sudo -H pip install virtualenv
+
+echo -e ""
+echo -e "\033[1;33mInstalling gprof2dot for visualising profiler data\033[0m"
+sudo -H pip install gprof2dot
 
 #sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 
