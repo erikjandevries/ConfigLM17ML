@@ -10,6 +10,8 @@ sudo apt-get install -y python-setuptools python-dev python-gtk2-dev build-essen
 #echo -e "\033[1;33mInstalling developer tools\033[0m"
 sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base liblapack-dev gfortran libpng12-dev libfreetype6-dev libopenblas-base libopenblas-dev graphviz
 
+sudo apt-get install -y python-dev libpq-dev
+
 echo -e ""
 echo -e "\033[1;33mInstalling prerequisites for SSL for pip\033[0m"
 sudo apt-get install -y libffi-dev libssl-dev
@@ -39,4 +41,3 @@ echo -e "\033[1;33m\033[40m                                                     
 echo -e "\033[1;33m\033[40m   Finished preparing Python 2.7 for Machine Learning   \033[0m"
 echo -e "\033[1;33m\033[40m                                                        \033[0m"
 echo -e ""
-
