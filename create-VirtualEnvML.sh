@@ -9,11 +9,15 @@ ln -sf /usr/lib/python2.7/dist-packages/{glib,gobject,cairo,gtk-2.0,pygtk.py,pyg
 
 echo -e ""
 echo -e "\033[1;33mConfiguring SSL for pip in the VirtualEnv\033[0m"
-pip install pyopenssl ndg-httpsclient pyasn1
+pip install -U pyopenssl ndg-httpsclient pyasn1
 
 echo -e ""
-echo -e "\033[1;33mInstalling gprof2dot for visualising profiler data\033[0m"
-pip install gprof2dot
+echo -e "\033[1;33mInstalling \033[1;32mgprof2dot\033[1;33m for visualising profiler data\033[0m"
+pip install -U gprof2dot
+
+echo -e ""
+echo -e "\033[1;33mInstalling \033[1;32mrequests\033[1;33m for downloading files\033[0m"
+pip install -U requests
 
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mnumpy\033[1;33m in the VirtualEnv\033[0m"
@@ -39,6 +43,8 @@ pip install -U Theano
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mpsycopg2\033[1;33m in the VirtualEnv\033[0m"
 pip install -U psycopg2
+
+. prep-basemap.sh
 
 echo -e ""
 echo -e "\033[1;33mPip list inside the VirtualEnv\033[0m"
