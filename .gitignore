@@ -1,2 +1,6 @@
-private/
+env
+.ipynb_checkpoints/
+
 basemap-?.?.?/
+
+private/

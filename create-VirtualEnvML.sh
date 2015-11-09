@@ -44,6 +44,10 @@ echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mpsycopg2\033[1;33m in the VirtualEnv\033[0m"
 pip install -U psycopg2
 
+echo -e ""
+echo -e "\033[1;33mInstalling \033[1;32mJupyter\033[1;33m in the VirtualEnv\033[0m"
+pip install -U jupyter
+
 # . prep-basemap.sh
 
 echo -e ""
