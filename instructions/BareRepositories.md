@@ -18,6 +18,6 @@ the bare repository.
 
 After the origin's branch has been set, you can add, commit and push files to
 the bare repository as usual.
-> git add .
-> git commit -m "Initial commit."
+> git add .  
+> git commit -m "Initial commit."  
 > git push
