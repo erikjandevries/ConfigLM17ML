@@ -45,3 +45,5 @@ and add the following line:
 ##### 7. Optionally: mount directly
 > sudo mount -a
 
+##### 8. Optionally: create symbolic link in home dir
+> ln -s /mnt/**FOLDERNAME** ~/**LINKEDFOLDERNAME**
