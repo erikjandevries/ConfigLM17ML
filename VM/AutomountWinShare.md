@@ -41,3 +41,7 @@ and find the user's UID and GID in the output. For Linux Mint 17 the UID and GID
 and add the following line:
 
 > //**SERVERNAME**/**SHARENAME**  /mnt/**FOLDERNAME** cifs defaults,uid=**UID**,gid=**GID**,credentials=/home/**USER**/.shareCredentials 0 0
+
+##### 7. Optionally: mount directly
+> sudo mount -a
+
