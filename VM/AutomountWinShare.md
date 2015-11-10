@@ -22,3 +22,22 @@ and add the following text (no spaces!!):
 ##### 4. Mount the file share as root
 > sudo mount -t cifs -o "credentials=/home/**USER**/.shareCredentials" //**SERVERNAME**/**SHARENAME** /mnt/**FOLDERNAME**
 
+To unmount the file share:
+
+> sudo umount /mnt/**FOLDERNAME**
+
+### Automatically mount a file share at system startup
+
+##### 5. Find the users ID
+In a terminal type
+
+> id **USER**
+
+and find the user's UID and GID in the output. For Linux Mint 17 the UID and GID of the first user created seem to be 1000.
+
+##### 6. Add mount details to fstab
+> sudo gedit /etc/fstab
+
+and add the following line:
+
+> //**SERVERNAME**/**SHARENAME**  /mnt/**FOLDERNAME**  cifs defaults,uid=**UID**,gid=**GID**,credentials=/home/**USER**/.shareCredentials,umask=777  0  0
