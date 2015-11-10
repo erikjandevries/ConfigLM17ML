@@ -26,6 +26,9 @@ To unmount the file share:
 
 > sudo umount /mnt/**FOLDERNAME**
 
+##### Optionally: create symbolic link in home dir
+> ln -s /mnt/**FOLDERNAME** ~/**LINKEDFOLDERNAME**
+
 ### Automatically mount a file share at system startup
 
 ##### 5. Find the users ID
@@ -42,8 +45,8 @@ and add the following line:
 
 > //**SERVERNAME**/**SHARENAME**  /mnt/**FOLDERNAME** cifs defaults,uid=**UID**,gid=**GID**,credentials=/home/**USER**/.shareCredentials 0 0
 
-##### 7. Optionally: mount directly
+##### Optionally: mount directly
 > sudo mount -a
 
-##### 8. Optionally: create symbolic link in home dir
+##### Optionally: create symbolic link in home dir
 > ln -s /mnt/**FOLDERNAME** ~/**LINKEDFOLDERNAME**
