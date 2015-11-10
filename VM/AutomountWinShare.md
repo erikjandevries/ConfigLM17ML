@@ -1,5 +1,7 @@
 # Automount a Windows share
 
+Because of all the obvious security issues, no automated script, but a set of instructions to get the file share up and running. I like to use this method to store my repositories outside my Virtual Machines when I don't want my code uploaded to a public repository.
+
 Please replace all **BOLDCAPITALS** with your own values.
 
 ### How to mount a Windows file share
