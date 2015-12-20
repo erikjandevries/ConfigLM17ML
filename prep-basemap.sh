@@ -14,3 +14,24 @@ cd ..
 python setup.py install
 cd ..
 rm -rf basemap-1.0.7
+
+
+# echo -e "\033[1;33m\033[40m                                                                \033[0m"
+# echo -e "\033[1;33m\033[40m   Installing the Python Imaging Library                        \033[0m"
+# echo -e "\033[1;33m\033[40m                                                                \033[0m"
+#
+# wget -O ~/Downloads/Imaging-1.1.7.tar.gz http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+# tar -zxvf ~/Downloads/Imaging-1.1.7.tar.gz
+#
+# cd Imaging-1.1.7
+# python setup.py install
+# cd ..
+# rm -rf Imaging-1.1.7
+
+
+echo -e "\033[1;33m\033[40m                                                                \033[0m"
+echo -e "\033[1;33m\033[40m   Installing pillow                                            \033[0m"
+echo -e "\033[1;33m\033[40m                                                                \033[0m"
+pip install pillow
+
+# sudo apt-get install libjpeg-dev
