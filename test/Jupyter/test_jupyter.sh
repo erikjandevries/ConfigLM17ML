@@ -13,7 +13,7 @@ pip install pyopenssl ndg-httpsclient pyasn1
 
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mJupyter\033[1;33m in the VirtualEnv\033[0m"
-pip install -U jupyter
+pip install --upgrade jupyter
 
 echo -e ""
 echo -e "\033[1;33m\033[44m Running a test-script with Python \033[0m"
