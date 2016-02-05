@@ -9,44 +9,51 @@ ln -sf /usr/lib/python2.7/dist-packages/{glib,gobject,cairo,gtk-2.0,pygtk.py,pyg
 
 echo -e ""
 echo -e "\033[1;33mConfiguring SSL for pip in the VirtualEnv\033[0m"
-pip install -U pyopenssl ndg-httpsclient pyasn1
+pip install --upgrade pyopenssl ndg-httpsclient pyasn1
 
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mgprof2dot\033[1;33m for visualising profiler data\033[0m"
-pip install -U gprof2dot
+pip install --upgrade gprof2dot
 
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mrequests\033[1;33m for downloading files\033[0m"
-pip install -U requests
+pip install --upgrade requests
 
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mnumpy\033[1;33m in the VirtualEnv\033[0m"
-pip install -U numpy
+pip install --upgrade numpy
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mpandas\033[1;33m in the VirtualEnv\033[0m"
-pip install -U pandas
+pip install --upgrade pandas
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mscipy\033[1;33m in the VirtualEnv\033[0m"
-pip install -U scipy
+pip install --upgrade scipy
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mnltk\033[1;33m in the VirtualEnv\033[0m"
-pip install -U nltk
+pip install --upgrade nltk
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mscikit-learn\033[1;33m in the VirtualEnv\033[0m"
-pip install -U scikit-learn
+pip install --upgrade scikit-learn
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mmatplotlib\033[1;33m in the VirtualEnv\033[0m"
-pip install -U matplotlib
+pip install --upgrade matplotlib
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mTheano\033[1;33m in the VirtualEnv\033[0m"
-pip install -U Theano
+# pip install --upgrade Theano
+pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
+echo -e ""
+echo -e "\033[1;33mInstalling \033[1;32mLasagne\033[1;33m in the VirtualEnv\033[0m"
+pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+echo -e ""
+echo -e "\033[1;33mInstalling \033[1;32mLasagne\033[1;33m in the VirtualEnv\033[0m"
+pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mpsycopg2\033[1;33m in the VirtualEnv\033[0m"
-pip install -U psycopg2
+pip install --upgrade psycopg2
 
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mJupyter\033[1;33m in the VirtualEnv\033[0m"
-pip install -U jupyter
+pip install --upgrade jupyter
 
 # . prep-basemap.sh
 
