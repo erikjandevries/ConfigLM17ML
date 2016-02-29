@@ -20,17 +20,18 @@ echo -e ""
 echo -e "\033[1;33mInstalling pip\033[0m"
 # Using apt-get to install python-pip gives an old version; using easy_install instead!
 sudo easy_install -U pip
+
 echo -e ""
 echo -e "\033[1;33mConfiguring SSL for pip\033[0m"
-sudo -H pip install pyopenssl ndg-httpsclient pyasn1
+sudo -H pip install --upgrade pyopenssl ndg-httpsclient pyasn1
 
 echo -e ""
 echo -e "\033[1;33mInstalling virtualenv\033[0m"
-sudo -H pip install virtualenv
+sudo -H pip install --upgrade virtualenv
 
 echo -e ""
 echo -e "\033[1;33mInstalling gprof2dot for visualising profiler data\033[0m"
-sudo -H pip install gprof2dot
+sudo -H pip install --upgrade gprof2dot
 
 #sudo apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose
 

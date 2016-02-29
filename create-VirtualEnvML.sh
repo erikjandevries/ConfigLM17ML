@@ -1,3 +1,11 @@
+# echo -e "\033[1;33mInstalling the latest version of pip\033[0m"
+# sudo -H pip install --upgrade pip
+#
+# echo -e ""
+# echo -e "\033[1;33mInstalling the latest version of virtualenv\033[0m"
+# sudo -H pip install --upgrade virtualenv
+
+echo -e ""
 echo -e "\033[1;33mCreating and activating a temporary VirtualEnv\033[0m"
 ENV_NAME=${1:-env}
 virtualenv $ENV_NAME
@@ -41,9 +49,6 @@ echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mTheano\033[1;33m in the VirtualEnv\033[0m"
 # pip install --upgrade Theano
 pip install --upgrade --no-deps git+git://github.com/Theano/Theano.git
-echo -e ""
-echo -e "\033[1;33mInstalling \033[1;32mLasagne\033[1;33m in the VirtualEnv\033[0m"
-pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mLasagne\033[1;33m in the VirtualEnv\033[0m"
 pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
