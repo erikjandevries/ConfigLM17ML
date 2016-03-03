@@ -11,5 +11,6 @@ apm install language-matlab
 apm install language-r
 apm install merge-conflicts
 apm install split-diff
+apm install atom-alignment
 
 apm upgrade --no-confirm
