@@ -12,6 +12,9 @@ sudo apt-get install -y build-essential python-dev libatlas-dev libatlas3-base l
 
 sudo apt-get install -y python-dev libpq-dev
 
+sudo apt-get install -y python-xlib
+sudo apt-get install -y sudo apt-get scrot
+
 echo -e ""
 echo -e "\033[1;33mInstalling prerequisites for SSL for pip\033[0m"
 sudo apt-get install -y libffi-dev libssl-dev
