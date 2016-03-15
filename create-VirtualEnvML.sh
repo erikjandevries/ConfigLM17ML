@@ -24,8 +24,8 @@ echo -e "\033[1;33mConfiguring SSL for pip in the VirtualEnv\033[0m"
 pip install --upgrade pyopenssl ndg-httpsclient pyasn1
 
 echo -e ""
-echo -e "\033[1;33mInstalling \033[1;32mPython Imaging Library\033[1;33m (PIL)\033[0m"
-pip install --no-index -f http://dist.plone.org/thirdparty/ -U PIL --trusted-host dist.plone.org
+echo -e "\033[1;33mInstalling \033[1;32mPillow\033[1;33m in the VirtualEnv\033[0m"
+pip install --upgrade Pillow
 
 echo -e ""
 echo -e "\033[1;33mInstalling \033[1;32mPyAutoGUI\033[1;33m for controling the mouse and keyboard\033[0m"
